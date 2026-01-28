@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-size: 2em;
+  color: #ff0055;
+  text-shadow: 0 0 10px #ff0055, 0 0 20px #ff00aa, 0 0 30px #ff00ff;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-btn {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+  transform: scale(1.3) rotate(5deg);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.8; text-shadow: 0 0 5px #ff0055; }
+  50% { opacity: 1; text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00aa; }
+  100% { opacity: 0.9; text-shadow: 0 0 10px #ff00ff, 0 0 30px #ff0055; }
+}
