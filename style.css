@@ -15,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -79,9 +78,9 @@ main {
 
 /* TITLE */
 h1 {
-  font-size: clamp(1.6rem, 5vw, 3rem);
+  font-size: clamp(2.2rem, 8vw, 3rem);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   line-height: 1;
   background: linear-gradient(135deg, #fff 0%, #c8b4ff 35%, #ff6eb0 68%, #ffaa5c 100%);
   -webkit-background-clip: text;
