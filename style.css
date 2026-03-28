@@ -71,6 +71,7 @@ main {
   width: 100%;
   max-width: 440px;
   padding: 56px 20px 52px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
