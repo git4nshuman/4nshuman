@@ -6,83 +6,70 @@
   <title>4nshuman</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="cursor"></div>
-  <canvas id="globe-canvas"></canvas>
+  <canvas id="bg"></canvas>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
 
   <main>
-    <section class="hero">
-      <div class="glitch-wrap">
-        <h1 class="glitch" data-text="4nshuman">4nshuman</h1>
-      </div>
-      <p class="handle">@ig4nshuman</p>
-      <p class="typewriter"><span id="typed"></span><span class="cursor-blink">|</span></p>
-    </section>
+    <h1>4nshuman</h1>
+    <p class="handle">@tenseroid</p>
+    <div class="divider"></div>
 
-    <section class="stats">
-      <div class="stat-card">
-        <span class="stat-num" data-target="100">0</span>
-        <span class="stat-label">Projects Goal</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num" data-target="17">0</span>
-        <span class="stat-label">Age</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num" data-target="2027">0</span>
-        <span class="stat-label">NIT/IIIT Year</span>
-      </div>
-    </section>
-
-    <section class="about-grid">
-      <div class="glass-card tilt-card">
-        <div class="card-icon">⚡</div>
-        <h3>Kaam kaaj?</h3>
-        <p>Berozgaar</p>
-      </div>
-      <div class="glass-card tilt-card">
-        <div class="card-icon">🎯</div>
-        <h3>Surviving School</h3>
-        <p>Class 12 PCM. Target: CSE 2027. Aata jata kuch hai nahi</p>
-      </div>
-    </section>
-
-    <section class="links-section">
-      <h2 class="section-title">Find Me Here</h2>
-      <div class="links-grid">
-        <a href="https://github.com/git4nshuman" target="_blank" class="link-card" data-platform="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          <span>GitHub</span>
-          <small>git4nshuman</small>
-        </a>
-        <a href="https://x.com/tenseroid" target="_blank" class="link-card" data-platform="Twitter/X">
+    <div class="links">
+      <a href="https://x.com/tenseroid" target="_blank" class="btn btn-x">
+        <span class="icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          <span>X / Twitter</span>
-          <small>@tenseroid</small>
-        </a>
-        <a href="https://www.linkedin.com/in/anshuman-atri-972119398" target="_blank" class="link-card" data-platform="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          <span>LinkedIn</span>
-          <small>Anshuman</small>
-        </a>
-        <a href="https://www.youtube.com/@yt4nshuman" target="_blank" class="link-card" data-platform="YouTube">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          <span>YouTube</span>
-          <small>@yt4nshuman</small>
-        </a>
-        <a href="https://t.me/tg4nshuman" target="_blank" class="link-card" data-platform="Telegram">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          <span>Telegram</span>
-          <small>tg4nshuman</small>
-        </a>
-      </div>
-    </section>
+        </span>
+        <span class="label">X / Twitter</span>
+        <span class="arr">↗</span>
+      </a>
 
-    <footer>
-      <p>Built by <span class="accent">@ig4nshuman</span> · dumb guy · 2026</p>
-    </footer>
+      <a href="https://www.youtube.com/@yt4nshuman" target="_blank" class="btn btn-yt">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </span>
+        <span class="label">YouTube</span>
+        <span class="arr">↗</span>
+      </a>
+
+      <a href="https://t.me/tg4nshuman" target="_blank" class="btn btn-tg">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </span>
+        <span class="label">Telegram</span>
+        <span class="arr">↗</span>
+      </a>
+
+      <a href="https://www.reddit.com/user/Shot_Pepper_2335" target="_blank" class="btn btn-rd">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+        </span>
+        <span class="label">Reddit</span>
+        <span class="arr">↗</span>
+      </a>
+
+      <a href="https://www.instagram.com/ig4nshuman" target="_blank" class="btn btn-ig">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </span>
+        <span class="label">Instagram</span>
+        <span class="arr">↗</span>
+      </a>
+
+      <a href="https://www.quora.com/profile/Q4nshuman" target="_blank" class="btn btn-qr">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.317 20.002c-.691-1.505-1.567-2.973-3.199-2.973-.318 0-.637.06-.927.196l-.601-1.309c.656-.518 1.713-.905 3.017-.905 2.112 0 3.346 1.083 4.266 2.77.77-1.342 1.196-3.016 1.196-4.98 0-5.29-2.841-8.801-6.096-8.801-3.253 0-6.096 3.511-6.096 8.801 0 5.286 2.843 8.8 6.096 8.8.786 0 1.545-.19 2.252-.548l-.131-.28.223.229zm1.847 2.082c-1.227.693-2.625 1.066-4.068 1.066-5.053 0-8.96-4.227-8.96-10.348C1.136 6.682 5.043 2.46 9.996 2.46c5.055 0 8.961 4.222 8.961 10.342 0 2.786-.814 5.166-2.237 6.922.55.948 1.085 1.366 1.743 1.366.521 0 .975-.184 1.456-.616l.95 1.763c-.801.773-1.731 1.168-2.781 1.168-1.219 0-2.237-.558-3.024-1.551l.1.23z"/></svg>
+        </span>
+        <span class="label">Quora</span>
+        <span class="arr">↗</span>
+      </a>
+    </div>
+
+    <p class="footer">4nshuman · 2026</p>
   </main>
 
   <script src="script.js"></script>
