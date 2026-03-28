@@ -79,7 +79,7 @@ main {
 
 /* TITLE */
 h1 {
-  font-size: clamp(1.8rem, 9vw, 4.2rem);
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
