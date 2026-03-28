@@ -78,7 +78,9 @@ main {
 
 /* TITLE */
 h1 {
-  font-size: clamp(3rem, 14vw, 4.2rem);
+  font-size: clamp(2rem, 10vw, 4.2rem);
+  padding: 0 8px;
+  word-break: break-word;
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
