@@ -50,9 +50,9 @@ frame();
 
 // ---- TYPEWRITER ----
 const lines = [
-  'BUILDER · CODER · CREATOR',
-  'DELHI, INDIA',
-  'LINKS · SOCIALS · CONNECT'
+  'ANPADH · LIABILITY · FAILURE',
+  'JITNI BEZZATI KARO KAM HAI',
+  'LINKS · SOCIALS'
 ];
 let li = 0, ci = 0, deleting = false;
 const tw = document.getElementById('tw');
